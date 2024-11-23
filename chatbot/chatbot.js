@@ -10,11 +10,8 @@ const credentials = {
     private_key : config.googlePrivateKey
 };
 
-// Ensure this matches the actual JSON key filename
-const keyFilePath = path.join(__dirname, '../config/ted-assistant-vwgj-a99fe96187b3.json');  
-
 const sessionClient = new dialogflow.SessionsClient({
-    keyFilename: keyFilePath ,
+  
     projectID ,
     credentials
 
